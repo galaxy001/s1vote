@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>S1漫区投票统计</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/jquery.dynatable.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/jquery.dynatable.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+  <div class="container">
+  <div align="center">
+    <select id="search-state" name="contr_state">
+      <option value="">争议性</option>
+      <option>全员一致</option>
+      <option>略有分歧</option>
+      <option>褒贬不一</option>
+      <option>你死我活</option>
+    </select>
+    <select id="search-year">
+      <option value="">全年份</option>
+      <option>2008</option>
+      <option>2009</option>
+      <option>2010</option>
+      <option>2011</option>
+      <option>2012</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2015</option>
+    </select>
+    <select id="search-season">
+      <option value="">全季度</option>
+      <option>1</option>
+      <option>4</option>
+      <option>7</option>
+      <option>10</option>
+    </select>
+
+  </div>
+  <div class="table-responsive">
+  <table id="my_table" class="table table-bordered table-hover table-striped">
+      <thead>
+          <tr>
+              <th data-dynatable-column="rank">排名</th>
+              <th class="col-md-2" data-dynatable-column="title">标题</th>
+              <th data-dynatable-column="avg_score">平均分</th>
+              <th data-dynatable-column="vote_count">投票数</th>
+              <th data-dynatable-column="click_count">点击数</th>
+              <th data-dynatable-column="reply_count">回复数</th>
+              <th data-dynatable-column="contr_state">争议性</th>
+              <th data-dynatable-column="vote_start">投票始于</th>
+              <th style="display: none" data-dynatable-column="year">投票开始</th>
+              <th style="display: none" data-dynatable-column="season">投票开始</th>
+          </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div align="center">
+  <p><span>数据更新于: </span><span id="update_date"></span><br/>
+  <span><a href="outer.html">显示圈外投票(投票数小于20)</a></span>
+  </p>
+  </div>
+  <div align="center">
+  <p>Powered by
+   <a href="http://bbs.saraba1st.com/2b/space-uid-141193.html">charlygaol</a> &
+   <a href="https://github.com/goodbest">goodbest</a>
+  </p>
+  </div>
+  </div>
+
+</body>
+</html>

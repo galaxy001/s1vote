@@ -1,0 +1,33 @@
+table {
+    font-size: inherit;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+td {
+    vertical-align: top;
+    border:1px solid #cccccc;
+    text-align: center;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+th {
+    text-align: inherit;
+    border:1px solid #cccccc;
+    width:70px;
+    padding: 5px;
+    text-align: center;
+    background: #07a36f;
+    color:#fff;
+}
+
+
+table tbody tr:nth-child(odd) td {
+    background-color: #a5be98;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: #dfffdb;
+}
